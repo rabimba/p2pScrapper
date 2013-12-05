@@ -1,0 +1,12 @@
+To start the attack:
+1)Create the database with schema.sql 
+2)Start fake.py as root
+3)Start uTorrent as the announce server. (In "advanced" under preferences)
+4)In uTorrent Force all outgoing connections to be encrypted. (In "BitTorrent" under preferences)
+5)Change uTorrent's port to 3128 for urlsnarf's default. 
+6)Create a torrent file and seed it with uTorrent.  
+7)Open that .torrent file with p2pScraper's Python bittorrent client. 
+Once the the .torrent file is opened,  a scrape request will be fired off and the database will be
+populated with the proper infohash.  
+
+It can take up to 10 minutes to trigger.  Usually it does it right away,  i'm not sure why. 
