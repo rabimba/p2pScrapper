@@ -10,22 +10,22 @@ Right now the code will only work under Linux. Hence you need to run this in lin
 +	Linux (OS) or Macintosh with Macports (not-tested)
 +	Python 2.7.x installed
 +	Root user access enabled
-+	µtorrent installed
++	ï¿½torrent installed
 
 
 
 ## Installation Instruction: ##
 
-- ### Installing BitTorrent ######
-	+	The easiest way to install is to run the “install_nix.sh” in the bittorrent folder.
+- ### Installing BitTorrent ###
+	+	The easiest way to install is to run the ï¿½install_nix.shï¿½ in the bittorrent folder.
 	+	OR $ python setup.py install
 - ### Using the Scrapper(To Start The Attack) ######
 
 	+	Import the schema.sql in your mysql database. It will create the relevant databse and the tables in your MySql where the infohash will be stored. Right now it will use a database name rkfake.
 	+	Start fake.py as root (or sudo)
-	+	Start µTorrent as the announce server. (In "advanced" under preferences)
-	+	In µTorrent Force all outgoing connections to be encrypted. (In "BitTorrent" under preferences)
-	+	Change µTorrent's port to 3128 for urlsnarf's default
+	+	Start ï¿½Torrent as the announce server. (In "advanced" under preferences)
+	+	In ï¿½Torrent Force all outgoing connections to be encrypted. (In "BitTorrent" under preferences)
+	+	Change ï¿½Torrent's port to 3128 for urlsnarf's default
 	+	Create a torrent file and seed it with uTorrent
 	+	Open that .torrent file with p2pScrapper's Python bittorrent client
 
